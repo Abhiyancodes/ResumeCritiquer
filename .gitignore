@@ -3,7 +3,7 @@ __pycache__/
 *.pyc
 
 
-secrets.toml
+.streamlit/
 
 
 .env
