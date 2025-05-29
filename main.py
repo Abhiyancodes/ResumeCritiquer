@@ -8,7 +8,8 @@ st.set_page_config(page_title="AI Resume Critiquer", page_icon="📄", layout="c
 st.title("📄AI Resume Critiquer")
 st.markdown("Upload your resume and get **AI-powered feedback** tailored to your needs!")
 
-GOOGLE_API_KEY = st.secrets["GOOGLE_API_KEY"]
+
+GOOGLE_API_KEY = st.secrets["general"]["GOOGLE_API_KEY"]
 genai.configure(api_key=GOOGLE_API_KEY)
 
 uploaded_file = st.file_uploader("Upload your resume (PDF or TXT)", type=["pdf", "txt"])
